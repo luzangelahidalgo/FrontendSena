@@ -1,0 +1,108 @@
+
+
+    <div class="container" style="margin-top: 13px; margin-bottom: 18px;">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-3 text-center">
+                    <b>
+                        Formulario registro usuario
+                    </b>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <form [formGroup]="form" (ngSubmit)="guardar()">
+                        <div class="mb-4 row">
+                            <label for="inputNombres" class="col-sm-4 col-form-label">Nombres:</label>
+                            <div class="col-sm-8">
+                                <input formControlName="nombre"  type="text" class="form-control" id="inputNombres">
+                            </div>
+                        </div>
+                        <div class="mb-4 row">
+                            <label for="inputapellido" class="col-sm-4 col-form-label">Apellidos:</label>
+                            <div class="col-sm-8">
+                                <input type="text" formControlName="apellido" class="form-control" id="inputApellidos">
+                            </div>
+                        </div>
+                        <div class="mb-4 row">
+                            <label for="inputtipodeDocumento" class="col-sm-4 col-form-label">Tipo documento:</label>
+                            <div class="col-sm-8">
+                                <select id="inputTipo" formControlName="tipodeDocumento" class="form-control">
+                                    <option value="1">CC</option>
+                                    <option value="2">RC</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-4 row">
+                            <label for="inputcedula" class="col-sm-4 col-form-label">N° de documento:</label>
+                            <div class="col-sm-8">
+                                <input type="number" formControlName="cedula" class="form-control" id="inputNumDoc">
+                            </div>
+                        </div>
+                        <div class="mb-4 row">
+                            <label for="inputfechaNacimiento" class="col-sm-4 col-form-label">Fecha de nacimiento:</label>
+                            <div class="col-sm-8">
+                                <input type="date" formControlName="fechaNacimiento" class="form-control" id="inputDateBirth">
+                            </div>
+                        </div>
+                        <div class="mb-4 row">
+                            <label for="inputcorreo" class="col-sm-4 col-form-label">Correo electronico:</label>
+                            <div class="col-sm-8">
+                                <input type="correo" formControlName="correo" class="form-control" id="inputEmail">
+                            </div>                  
+                        </div>
+                        <div class="mb-4 row">
+                            <label for="inputcorreo" class="col-sm-4 col-form-label">Cargo:</label>
+                            <div class="col-sm-8">
+                                <input type="cargo" formControlName="cargo" class="form-control" id="inputCargo">
+                            </div> 
+                        </div> 
+                        <div class="mb-4 row">
+                            <label for="inputCel" class="col-sm-4 col-form-label">Celular:</label>
+                            <div class="col-sm-8">
+                                <input type="tel" formControlName="telefono" class="form-control" id="inputCel">
+                            </div>
+                        </div>
+            
+                        <div class="mb-4 row">
+                            <label for="inputUsuario" class="col-sm-4 col-form-label">Usuario:</label>
+                            <div class="col-sm-8">
+                                <input type="text" formControlName="usuario" class="form-control" id="inputUsuario">
+                            </div>
+                        </div>
+                        <div class="mb-4 row">
+                            <label for="inputPass" class="col-sm-4 col-form-label">Contraseña:</label>
+                            <div class="col-sm-8">
+                                <input type="password" formControlName="password" class="form-control" id="inputPass">
+                            </div>
+                        </div>
+                <!--         <div class="mb-4 row">
+                            <label for="inputFoto" class="col-sm-4 col-form-label">Foto:</label>
+                            <div class="col-sm-8">
+                                <input type="file" class="form-control" id="inputFoto" accept=".png,.jpg,.jpeg">
+                            </div>
+                        </div> -->
+
+                        <div class="mb-4 row">
+                            <button type="submit">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+        <!--         <a href="./Listadodeusuarios.html" class="btn btn-success">Guardar</a> -->
+                <!--  <button type="submit" class="btn btn-success">Guardar</button>-->
+            </div>
+
+        </div>
+    </div>

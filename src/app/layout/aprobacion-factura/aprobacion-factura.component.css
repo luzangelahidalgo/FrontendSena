@@ -1,0 +1,14 @@
+.vertical-line {
+    border-right: 1px inset;
+    height: min-content;
+    border-color: black;
+}
+
+.btn_nav {
+    text-decoration: underline;
+    color: blue;
+}
+
+button {
+    margin-right: 20px;
+}

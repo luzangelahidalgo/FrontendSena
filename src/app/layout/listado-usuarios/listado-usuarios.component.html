@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="display-6 text-center">
+                <b>
+                    LISTADO DE USUARIOS
+                </b>
+            </h1>
+        </div>
+    </div>
+</div>
+
+
+ 
+    <div class="container">
+        <div class="row">
+            <div class="col-11 offset-9">
+                <div class="d-grid gap-2 col-60 mx-auto">
+                    <div class="form-check">
+                        <div class="input-group">
+                            <span style="margin-top: 20px;" class="input-group-addon">
+                                <button class="btn btn-success" type="button ">CREAR UN NUEVO USUARIO </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div>
+    <div class="container" style="margin-top: 20px;">
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre de Usuarios</th>
+                            <th scope="col">Cedula</th>
+                            <th scope="col">Cargo</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of rsp;">
+                            <th scope="row">{{item.nombre}} {{item.apellido}}</th>
+                            <td>{{item.cedula}}</td>
+                            <td>{{item.cargo}}</td>
+                            <td>{{item.correo}}</td>
+                            <td>editar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-grid gap-2 d-md-block">
+                    <div class="form-check">
+                        <div class="input-group">
+                            <span style="margin-top: 50px;" class="input-group-addon">
+                                <button class="btn btn-secondary" type="button">REGRESAR</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

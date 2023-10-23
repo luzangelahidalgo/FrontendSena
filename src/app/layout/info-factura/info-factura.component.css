@@ -1,0 +1,10 @@
+table tr:nth-child(1) {
+    background-color: #e4e4e4be;
+}
+
+table,th,td {
+
+    border: 1px solid black;
+    text-align: center;
+
+}
